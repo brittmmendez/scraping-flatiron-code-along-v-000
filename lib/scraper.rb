@@ -8,9 +8,7 @@ class Scraper
 
     url="https://www.amazon.com/charts"
     doc = Nokogiri::HTML(open(url))
-    book=doc.css(".kc-horizontal-rank-card"))
-
-    binding.pry
+      binding.pry
 
 end
 Scraper.new.print_courses
